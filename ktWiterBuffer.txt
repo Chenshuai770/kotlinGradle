@@ -1,0 +1,1 @@
+我是kotlin的中使用的writeBuffer方法
