@@ -62,11 +62,22 @@ fun fileCopy() {
     var bufferedWriter = copyFile.bufferedWriter()
     val buffer = CharArray(1024)
 
+
+    /**
+     *  size = isa.read(buffer);
+    while (size !=-1){
+    bos.write(buffer,0,size)
+    size = isa.read(buffer)
+    }
+     */
     while (bufferedReader.read(buffer) != -1) {
         bufferedWriter.write(buffer, 0, buffer.size)
 
     }
     bufferedReader.close()
     bufferedWriter.close()
+
+
+
 
 }

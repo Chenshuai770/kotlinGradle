@@ -187,10 +187,10 @@ public class TestIo {
      */
     private static void FileBityCopy() {
         try {
-            FileInputStream fis = new FileInputStream("custom.txt");
+            InputStream fis = new FileInputStream("custom.txt");
             BufferedInputStream bis = new BufferedInputStream(fis);
 
-            FileOutputStream fos = new FileOutputStream("copyJava.txt");
+            OutputStream fos = new FileOutputStream("copyJava.txt");
             BufferedOutputStream bos = new BufferedOutputStream(fos);
 
             int size = 0;
